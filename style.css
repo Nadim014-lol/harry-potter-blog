@@ -1,0 +1,372 @@
+/* ------------------------------
+   BASIC RESET
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f5f1e8;
+    color: #24201c;
+    line-height: 1.7;
+}
+
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+
+header {
+    background: #171512;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f5f1e8;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #f5f1e8;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    min-height: 600px;
+    background: #211d18;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 80px 25px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-title,
+.section-label,
+.book-label {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.small-title {
+    color: #c9b98c;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: #f7f3e9;
+    font-size: clamp(55px, 9vw, 105px);
+    line-height: 0.95;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.hero p:not(.small-title) {
+    color: #d5d0c7;
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 13px 28px;
+
+    background: #f5f1e8;
+    color: #211d18;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+    border-radius: 2px;
+}
+
+.button:hover {
+    background: #d9d0bd;
+}
+
+
+/* ------------------------------
+   INTRODUCTION
+------------------------------ */
+
+.intro {
+    max-width: 850px;
+    margin: auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.section-label {
+    color: #756a58;
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.05;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.intro > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #615b52;
+}
+
+
+/* ------------------------------
+   BOOK SECTION
+------------------------------ */
+
+.books-section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 50px 25px 100px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+
+/* ------------------------------
+   BOOK CARDS
+------------------------------ */
+
+.book-card {
+    background: #fffdf8;
+
+    margin-bottom: 35px;
+    padding: 55px;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+
+    border: 1px solid #ded7c9;
+}
+
+.book-number {
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #b3a98f;
+}
+
+.book-content {
+    max-width: 750px;
+}
+
+.book-label {
+    color: #8a7d62;
+    margin-bottom: 10px;
+}
+
+.book-content h2 {
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.1;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.author {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #817a70;
+    margin-bottom: 25px;
+}
+
+.book-content > p:not(.book-label):not(.author) {
+    color: #514c45;
+    margin-bottom: 15px;
+}
+
+
+/* ------------------------------
+   REVIEW BOX
+------------------------------ */
+
+.review {
+    margin-top: 30px;
+    padding: 22px 25px;
+    background: #eee8dc;
+    border-left: 4px solid #87785a;
+}
+
+.review strong {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review p {
+    margin-top: 8px;
+    color: #514c45;
+}
+
+
+/* ------------------------------
+   ABOUT
+------------------------------ */
+
+.about {
+    max-width: 850px;
+    margin: auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 55px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.about p:not(.section-label) {
+    color: #5d574e;
+    margin-bottom: 15px;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background: #171512;
+    color: #f5f1e8;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+footer h3 {
+    font-family: Arial, sans-serif;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #c4beb2;
+}
+
+footer .copyright {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+
+/* ------------------------------
+   MOBILE RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .intro {
+        padding: 70px 25px;
+    }
+
+    .books-section {
+        padding-top: 30px;
+    }
+
+    .book-card {
+        padding: 30px 25px;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .book-number {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .book-content h2 {
+        font-size: 32px;
+    }
+
+    .section-heading h2,
+    .about h2 {
+        font-size: 42px;
+    }
+
+}
